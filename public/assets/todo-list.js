@@ -5,8 +5,6 @@ $(document).ready(function() {
         var item = $('form input');
         var todo = { item: item.val().trim() };
         
-        console.log('submit');
-
         $.ajax({
             type: 'POST',
             url: '/todo',
